@@ -89,12 +89,10 @@ public class Impiccato {
 			break;
 			case 2:
 				int indiceRandomico;
-				String parolaInDecomposizione = parolaDaIndovinare;
 				indiceRandomico = (int) Math.floor(Math.random()*parolaDaIndovinare.length());
 				char lettera = parolaDaIndovinare.charAt(indiceRandomico);
 				String letteraCasuale =""+lettera;
-				risultato = new StringBuilder(risultato).replace(indiceRandomico,indiceRandomico+1,letteraCasuale).toString(); 
-				parolaInDecomposizione = new StringBuilder(parolaInDecomposizione).delete(indiceRandomico, indiceRandomico+1).toString();
+				risultato = new StringBuilder(risultato).replace(indiceRandomico,indiceRandomico+1,letteraCasuale).toString();
 				if(vite == 4) {
 		   			gambaDx= gambaDx.replace("\\", " ");
 		   		}else if(vite == 3) {
